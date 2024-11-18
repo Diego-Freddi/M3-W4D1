@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-dark text-white">
+    <nav class="container navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid p-0">
+
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="assets/imgs/Netflix_Logo_RGB.png" alt="Icona" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler colore-bianco" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-sezione nav-link" href="#" id="browseDropdown" role="button">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-sezione nav-link" href="#" id="browseDropdown" role="button">
+                            Tv Shows
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-sezione nav-link" href="#" id="browseDropdown" role="button">
+                            Movies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-sezione nav-link" href="#" id="browseDropdown" role="button">
+                            Recently Added
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-sezione nav-link" href="#" id="browseDropdown" role="button">
+                            My List
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="d-flex justify-content-end align-items-center gap-3">
+                    <a href="#">
+                        <div class=" me-2 menu-icon">
+                            <i class="bi bi-search"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                        <div class=" me-2 menu-icon">
+                            <p class="m-0 nav-sezione">KIDS</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class=" me-2 menu-icon">
+                            <i class="bi bi-bell-fill"></i>
+                        </div>
+                    </a>
+                    <div class="dropdown text-start">
+                        <a href="#" class="text-white d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/imgs/avatar-5.jpg" alt="mdo" width="32" height="32">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end text-small">
+                            <li>
+                                <a class="dropdown-item text-muted d-flex gap-2 align-items-center" href="#">
+                                    <i class="bi bi-person text-muted"></i>
+                                    <p class="m-0">Profile</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-muted d-flex gap-2 align-items-center" href="#">
+                                    <i class="bi bi-star text-muted"></i>
+                                    <p class="m-0">Subscription</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-muted d-flex gap-2 align-items-center" href="#">
+                                    <i class="bi bi-gear text-muted"></i>
+                                    <p class="m-0">Settings</p>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-muted d-flex gap-2 align-items-center" href="#">
+                                    <i class="bi bi-power text-muted"></i>
+                                    <p class="m-0">Sign Out</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </nav>
+    <section id="sottomenu" class="my-2 container">
+        <div class=" text-center">
+            <div class="row">
+                <div class="ms-2 gap-5 col p-0 d-flex">
+                    <a class="nav-link" href="#" id="browseDropdown" role="button">
+                        <h3 class="m-0">TV Shows</h3>
+                    </a>
+                    <a class="px-2 d-flex align-items-center gap-3 nav-link dropdown-toggle" href="#" id="generi"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p class="m-0">Genres</p>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="generi">
+                        <li><a class="dropdown-item" href="#">Classici</a></li>
+                        <li><a class="dropdown-item" href="#">Commedia</a></li>
+                        <li><a class="dropdown-item" href="#">Fantasy e Fantasscienza</a></li>
+                        <li><a class="dropdown-item" href="#">Thriller</a></li>
+                        <li><a class="dropdown-item" href="#">Horror</a></li>
+                        <li><a class="dropdown-item" href="#">Animazione</a></li>
+                        <li><a class="dropdown-item" href="#">Dcoumentary</a></li>
+                        <li><a class="dropdown-item" href="#">TV Series</a></li>
+                    </ul>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <a href="#">
+                        <div class="sottomenu-icon">
+                            <i class="bi bi-text-left"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                        <div class="sottomenu-icon">
+                            <i class="bi bi-grid-fill"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="fadeElement">
+            <h4 class="mt-5">Trending Now</h4>
+            <div class="gallery-container">
+                <div class="gallery-wrapper">
+                    <button class="nav-btn prev" onclick="scrollGallery('gallery-1', -1)"><i class="bi bi-chevron-left"></i></button>
+                    <div class="gallery" id="gallery-1">
+                        <img src="assets/imgs/movies/1.png" alt="Film 1" class="film">
+                        <img src="assets/imgs/movies/2.png" alt="Film 2" class="film">
+                        <img src="assets/imgs/movies/3.png" alt="Film 3" class="film">
+                        <img src="assets/imgs/movies/4.png" alt="Film 4" class="film">
+                        <img src="assets/imgs/movies/5.png" alt="Film 5" class="film">
+                        <img src="assets/imgs/movies/6.png" alt="Film 6" class="film">
+                        <img src="assets/imgs/movies/7.png" alt="Film 7" class="film">
+                        <img src="assets/imgs/movies/8.png" alt="Film 8" class="film">
+                        <img src="assets/imgs/movies/9.png" alt="Film 9" class="film">
+                        <img src="assets/imgs/movies/10.png" alt="Film 10" class="film">
+                        <img src="assets/imgs/movies/11.png" alt="Film 11" class="film">
+                        <img src="assets/imgs/movies/12.png" alt="Film 12" class="film">
+                        <img src="assets/imgs/movies/13.png" alt="Film 13" class="film">
+                        <img src="assets/imgs/movies/14.png" alt="Film 14" class="film">
+                        <img src="assets/imgs/movies/15.png" alt="Film 15" class="film">
+                        <img src="assets/imgs/movies/16.png" alt="Film 16" class="film">
+                        <img src="assets/imgs/movies/17.png" alt="Film 17" class="film">
+                        <img src="assets/imgs/movies/18.png" alt="Film 18" class="film">
+                    </div>
+                    <button class="nav-btn next" onclick="scrollGallery('gallery-1',1)"><i class="bi bi-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="fadeElement">
+            <h4 class="mt-5">Watch It Again</h4>
+            <div class="gallery-container">
+                <div class="gallery-wrapper">
+                    <button class="nav-btn prev" onclick="scrollGallery('gallery-2', -1)"><i class="bi bi-chevron-left"></i></button>
+                    <div class="gallery" id="gallery-2">
+                        <img src="assets/imgs/movies/7.png" alt="Film 7" class="film">
+                        <img src="assets/imgs/movies/8.png" alt="Film 8" class="film">
+                        <img src="assets/imgs/movies/9.png" alt="Film 9" class="film">
+                        <img src="assets/imgs/movies/10.png" alt="Film 10" class="film">
+                        <img src="assets/imgs/movies/11.png" alt="Film 11" class="film">
+                        <img src="assets/imgs/movies/12.png" alt="Film 12" class="film">
+                        <img src="assets/imgs/movies/13.png" alt="Film 13" class="film">
+                        <img src="assets/imgs/movies/14.png" alt="Film 14" class="film">
+                        <img src="assets/imgs/movies/15.png" alt="Film 15" class="film">
+                        <img src="assets/imgs/movies/16.png" alt="Film 16" class="film">
+                        <img src="assets/imgs/movies/17.png" alt="Film 17" class="film">
+                        <img src="assets/imgs/movies/18.png" alt="Film 18" class="film">
+                        <img src="assets/imgs/movies/1.png" alt="Film 1" class="film">
+                        <img src="assets/imgs/movies/2.png" alt="Film 2" class="film">
+                        <img src="assets/imgs/movies/3.png" alt="Film 3" class="film">
+                        <img src="assets/imgs/movies/4.png" alt="Film 4" class="film">
+                        <img src="assets/imgs/movies/5.png" alt="Film 5" class="film">
+                        <img src="assets/imgs/movies/6.png" alt="Film 6" class="film">
+                    </div>
+                    <button class="nav-btn next" onclick="scrollGallery('gallery-2',1)"><i class="bi bi-chevron-right"></i></button>
+                </div>
+            </div>
+
+        </section>
+        <section class="fadeElement">
+            <h4 class="mt-5">New Releases</h4>
+            <div class="gallery-container">
+                <div class="gallery-wrapper">
+                    <button class="nav-btn prev" onclick="scrollGallery('gallery-3', -1)"><i class="bi bi-chevron-left"></i></button>
+                    <div class="gallery" id="gallery-3">
+                        <img src="assets/imgs/movies/13.png" alt="Film 13" class="film">
+                        <img src="assets/imgs/movies/14.png" alt="Film 14" class="film">
+                        <img src="assets/imgs/movies/15.png" alt="Film 15" class="film">
+                        <img src="assets/imgs/movies/16.png" alt="Film 16" class="film">
+                        <img src="assets/imgs/movies/17.png" alt="Film 17" class="film">
+                        <img src="assets/imgs/movies/18.png" alt="Film 18" class="film">
+                        <img src="assets/imgs/movies/1.png" alt="Film 1" class="film">
+                        <img src="assets/imgs/movies/2.png" alt="Film 2" class="film">
+                        <img src="assets/imgs/movies/3.png" alt="Film 3" class="film">
+                        <img src="assets/imgs/movies/4.png" alt="Film 4" class="film">
+                        <img src="assets/imgs/movies/5.png" alt="Film 5" class="film">
+                        <img src="assets/imgs/movies/6.png" alt="Film 6" class="film">
+                        <img src="assets/imgs/movies/7.png" alt="Film 7" class="film">
+                        <img src="assets/imgs/movies/8.png" alt="Film 8" class="film">
+                        <img src="assets/imgs/movies/9.png" alt="Film 9" class="film">
+                        <img src="assets/imgs/movies/10.png" alt="Film 10" class="film">
+                        <img src="assets/imgs/movies/11.png" alt="Film 11" class="film">
+                        <img src="assets/imgs/movies/12.png" alt="Film 12" class="film">
+                    </div>
+                    <button class="nav-btn next" onclick="scrollGallery('gallery-3',1)"><i class="bi bi-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="container py-5 text-white mt-5">
+        <div class="row pb-4 justify-content-center">
+            <div id="social" class="col-8 col-sn-2 d-flex gap-3">
+                <a class="colore-grigio" href=""><i class="bi bi-facebook"></i></a>
+                <a class="colore-grigio" href=""><i class="bi bi-instagram"></i></a>
+                <a class="colore-grigio" href=""><i class="bi bi-twitter"></i></a>
+                <a class="colore-grigio" href=""><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="font-size: 12px;">
+            <div class="col-6 col-md-2 mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Audio and
+                            Subtitles</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Media Center</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Privacy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 colore-grigio">Pricing</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row pb-4 justify-content-center">
+            <div class="col-8 colore-grigio" style="font-size: 12px;">
+                <p id="service">Service Code</p>
+                <p>&copy; 1997-2019 netflix, inc.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
